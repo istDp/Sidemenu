@@ -12,14 +12,17 @@ class ViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    let x = fma
     // Do any additional setup after loading the view, typically from a nib.
   }
-
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
+  @IBAction func onAction(_ sender: Any) {
+    Sidemenu.shareInstance().openMenu()
   }
+  
+  //unwind segue
+  @IBAction func unwindToHomePage(segue: UIStoryboardSegue) {}
 
+  
 
 }
 
